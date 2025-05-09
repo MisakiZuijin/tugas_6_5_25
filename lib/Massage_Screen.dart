@@ -15,7 +15,116 @@ class _MassageScreenState extends State<MassageScreen> {
         title: Text("Massage", style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.grey.shade800,
       ),
-      body: Center(child: Container(child: Text("Massage Screen"))),
+      body: Center(
+        child: Container(
+          height: 745,
+          width: 405,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: Colors.grey.shade300,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+              spacing: 15,
+              children: [
+                Container(
+                  height: 50,
+                  width: 375,
+                  alignment: Alignment.centerLeft,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Text("Massage Dummy"),
+                  ),
+                ),
+                Container(
+                  height: 50,
+                  width: 375,
+                  alignment: Alignment.centerLeft,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Text("Massage Dummy"),
+                  ),
+                ),
+                Container(
+                  height: 50,
+                  width: 375,
+                  alignment: Alignment.centerLeft,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Text("Massage Dummy"),
+                  ),
+                ),
+                Container(
+                  height: 50,
+                  width: 375,
+                  alignment: Alignment.centerLeft,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Text("Massage Dummy"),
+                  ),
+                ),
+                Container(
+                  height: 50,
+                  width: 375,
+                  alignment: Alignment.centerLeft,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Text("Massage Dummy"),
+                  ),
+                ),
+                Container(
+                  height: 50,
+                  width: 375,
+                  alignment: Alignment.centerLeft,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Text("Massage Dummy"),
+                  ),
+                ),
+                Container(
+                  height: 50,
+                  width: 375,
+                  alignment: Alignment.centerLeft,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Text("Massage Dummy"),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

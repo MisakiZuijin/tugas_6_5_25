@@ -28,12 +28,25 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _pages[_buttonNav],
-      bottomNavigationBar: AnimatedBottomNavigationBar(
-        icons: iconList,
-        iconSize: 30,
+      bottomNavigationBar: AnimatedBottomNavigationBar.builder(
+        itemCount: iconList.length,
+        tabBuilder: (int index, bool isActive) {
+          final color =
+              isActive
+                  ? const Color.fromARGB(255, 255, 85, 72)
+                  : Colors.grey.shade300;
+
+          return AnimatedContainer(
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.easeOutBack,
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: Transform.scale(
+              scale: isActive ? 1.7 : 1.0,
+              child: Icon(iconList[index], size: 30, color: color),
+            ),
+          );
+        },
         backgroundColor: Colors.grey.shade800,
-        activeColor: const Color.fromARGB(255, 255, 85, 72),
-        inactiveColor: Colors.grey.shade300,
         activeIndex: _buttonNav,
         notchSmoothness: NotchSmoothness.smoothEdge,
         gapLocation: GapLocation.none,

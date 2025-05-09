@@ -15,7 +15,18 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text("Home", style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.grey.shade800,
       ),
-      body: Center(child: Container(child: Text("Home Screen"))),
+      body: Center(
+        child: Container(
+          child: Text(
+            "Welcome To My Application",
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.grey.shade600,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
